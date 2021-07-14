@@ -45,7 +45,7 @@ object Platform {
               }
             }
 
-            Sync[F].blocking[Unit](streams.start())
+            streams.start()
           }
         }
         .redeemWith(_ => d.get, _ => d.get)
