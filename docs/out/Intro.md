@@ -93,7 +93,7 @@ import compstak.kafkastreams4s.testing.KafkaStreamsTestRunner
 import org.apache.kafka.streams.TopologyTestDriver
 
 val driver: Resource[IO, TopologyTestDriver] = 
-  Resource.liftF(topology).flatMap(KafkaStreamsTestRunner.testDriverResource[IO])
+  Resource.eval(topology).flatMap(KafkaStreamsTestRunner.testDriverResource[IO])
 
 ```
 

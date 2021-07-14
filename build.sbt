@@ -28,17 +28,17 @@ inThisBuild(
 enablePlugins(DockerComposePlugin)
 
 val Avro4sVersion = "3.1.1"
-val CatsEffectVersion = "2.2.0"
+val CatsEffectVersion = "3.1.1"
 val CirceVersion = "0.13.0"
 val CirceDebeziumVersion = "0.16.0"
-val DoobieVersion = "0.9.4"
-val FS2KafkaVersion = "1.0.0"
-val Http4sVersion = "0.21.7"
+val DoobieVersion = "1.0.0-M5"
+val FS2KafkaVersion = "2.1.0"
+val Http4sVersion = "1.0.0-M23"
 val KafkaVersion = "2.7.0"
 val KafkaConnectHttp4sVersion = "0.5.0"
 val MunitVersion = "0.7.19"
 val ShapelessVersion = "2.3.3"
-val VulcanVersion = "1.2.0"
+val VulcanVersion = "1.7.1"
 
 scalacOptions ++= Seq(
   "-deprecation",
